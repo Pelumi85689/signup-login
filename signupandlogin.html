@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp and Login</title>
+    <link rel="stylesheet" href="signupandlogin.css">
+</head>
+<body>
+    <div class="big">
+        <div class="small">
+            <div id="sign-up-box">
+                <div class="logo-div">
+                    <h2>Sign up</h2>
+                    <p>it's quick and easy.</p>
+                </div>
+                
+                <div class="all-input">
+                    <div class="input-div">
+                        <input type="firstname" name="" id="" placeholder="Frst name" required>
+                        <input type="surname" name="" id="" placeholder="Surname" required>
+                        <br>
+                        <input type="mobile number or email address" name="" id="" placeholder="Mobile number or email address" required>
+                        <br>
+                        <input type="password" name="" id="" placeholder="Password" required>
+                        <input type="password" name="" id="" placeholder="Confirm password" required>
+                    </div>
+                </div>
+                <div id="signup-msg"></div>
+                <div class="sign-up-btn-div">
+                    <button onclick="add(event)">Sign Up</button>
+                </div>
+                <div class="registered">
+                    <p>Already have an account? <span onclick="loginPage()">Login Here</span></p>
+                </div>
+                <div id="loading-div">
+                    <div class="loader"></i></div>
+                </div>
+            </div>
+
+            <div id="login-box">
+                <div class="logo-div">
+                    <h2>Login</h2>
+                </div>
+                
+                <div class="all-input">
+                    <div class="input-div">
+                        <input type="email address or phone number" name="" id="" placeholder="Email address or phone number" required>
+                        <br>
+                        <input type="password" name="" id="" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="f-password">Forgotten Password?</div>
+                <div class="login-btn-div">
+                    <button type="submit" onclick="add(event)">Login</button>
+                </div>
+                <div class="registered">
+                    <p>You don't have an account yet? <span onclick="signUpPage()">SignUp Here</span></p>
+                </div>
+                <div id="loading-divL">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="signupandlogin.js"></script>
+</body>
+</html>
